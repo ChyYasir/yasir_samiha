@@ -39,9 +39,9 @@ export default function WeddingInvitation() {
   const IntroContent = ({ isInitial = false }: { isInitial?: boolean }) => (
     <>
       {/* Bismillah */}
-      <section className="text-center space-y-6">
+      <section className="text-center space-y-3 lg:space-y-3.5 xl:space-y-4 2xl:space-y-6">
         {!isInitial && (
-          <div className="h-px w-48 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
+          <div className="h-px w-32 lg:w-36 xl:w-40 2xl:w-48 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
         )}
 
         <motion.h1
@@ -52,7 +52,7 @@ export default function WeddingInvitation() {
               ? { duration: 1.5, delay: 0.3, ease: "easeOut" }
               : undefined
           }
-          className="font-arabic text-4xl lg:text-5xl xl:text-6xl text-ivory leading-relaxed px-4"
+          className="font-arabic text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-ivory leading-relaxed px-4"
           style={{
             textShadow:
               "0 0 20px rgba(250, 248, 243, 0.3), 0 0 30px rgba(250, 248, 243, 0.5)",
@@ -66,18 +66,18 @@ export default function WeddingInvitation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="text-ivory/70 text-sm lg:text-base font-light tracking-wider italic"
+            className="text-ivory/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-light tracking-wider italic"
           >
             In the name of Almighty Allah
           </motion.p>
         ) : (
-          <p className="text-ivory/70 text-sm lg:text-base font-light tracking-wider italic">
+          <p className="text-ivory/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-light tracking-wider italic">
             In the name of Almighty Allah
           </p>
         )}
 
         {!isInitial && (
-          <div className="h-px w-48 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
+          <div className="h-px w-32 lg:w-36 xl:w-40 2xl:w-48 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
         )}
       </section>
 
@@ -88,13 +88,13 @@ export default function WeddingInvitation() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
-            className="text-ivory text-lg lg:text-xl font-light leading-relaxed tracking-wide"
+            className="text-ivory text-base lg:text-base xl:text-lg 2xl:text-xl font-light leading-relaxed tracking-wide"
           >
             I cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </motion.p>
         ) : (
-          <p className="text-ivory text-lg lg:text-xl font-light leading-relaxed tracking-wide">
+          <p className="text-ivory text-base lg:text-base xl:text-lg 2xl:text-xl font-light leading-relaxed tracking-wide">
             I cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </p>
@@ -102,14 +102,14 @@ export default function WeddingInvitation() {
       </section>
 
       {/* Couple Names */}
-      <section className="text-center space-y-6 py-4">
+      <section className="text-center space-y-3 lg:space-y-3.5 xl:space-y-4 2xl:space-y-6 py-2 lg:py-2.5 xl:py-3 2xl:py-4">
         {isInitial ? (
           <>
             <motion.h2
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 4.5, ease: "easeOut" }}
-              className="font-heading text-5xl lg:text-6xl xl:text-7xl text-ivory font-bold tracking-wide gold-glow"
+              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow"
             >
               Yasir Rahman
             </motion.h2>
@@ -118,14 +118,14 @@ export default function WeddingInvitation() {
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ duration: 1.2, delay: 5.5, ease: "easeInOut" }}
-              className="relative flex items-center justify-center py-4"
+              className="relative flex items-center justify-center py-2 lg:py-2.5 xl:py-3 2xl:py-4"
             >
               <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-transparent via-gold to-transparent" />
               <motion.span
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ duration: 0.8, delay: 6, ease: "easeOut" }}
-                className="px-6 text-gold text-4xl lg:text-5xl font-heading italic"
+                className="px-4 lg:px-4.5 xl:px-5 2xl:px-6 text-gold text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading italic"
               >
                 &
               </motion.span>
@@ -136,26 +136,26 @@ export default function WeddingInvitation() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
-              className="font-heading text-5xl lg:text-6xl xl:text-7xl text-ivory font-bold tracking-wide gold-glow"
+              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow"
             >
               Ishraq Samiha
             </motion.h2>
           </>
         ) : (
           <>
-            <h2 className="font-heading text-5xl lg:text-6xl xl:text-7xl text-ivory font-bold tracking-wide gold-glow">
+            <h2 className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow">
               Yasir Rahman
             </h2>
 
-            <div className="relative flex items-center justify-center py-4">
+            <div className="relative flex items-center justify-center py-2 lg:py-2.5 xl:py-3 2xl:py-4">
               <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-transparent via-gold to-transparent" />
-              <span className="px-6 text-gold text-4xl lg:text-5xl font-heading italic">
+              <span className="px-4 lg:px-4.5 xl:px-5 2xl:px-6 text-gold text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading italic">
                 &
               </span>
               <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-gold via-gold to-transparent" />
             </div>
 
-            <h2 className="font-heading text-5xl lg:text-6xl xl:text-7xl text-ivory font-bold tracking-wide gold-glow">
+            <h2 className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow">
               Ishraq Samiha
             </h2>
           </>
@@ -168,21 +168,21 @@ export default function WeddingInvitation() {
     <div className="relative min-h-screen">
       <AnimatedBackground />
 
-      <div className="relative w-full min-h-screen flex items-center justify-center py-16 md:py-20 px-4 lg:px-8">
+      <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
         {isDesktop ? (
           showSplitLayout ? (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="w-full max-w-7xl flex items-center gap-12"
+              className="w-full max-w-7xl flex items-center gap-6 lg:gap-7 xl:gap-8 2xl:gap-12"
             >
               {/* Left Section */}
               <motion.div
                 initial={{ x: "50%" }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
-                className="w-[45%] space-y-8"
+                className="w-[45%] space-y-4 lg:space-y-5 xl:space-y-6 2xl:space-y-8"
               >
                 <IntroContent />
               </motion.div>
@@ -192,27 +192,27 @@ export default function WeddingInvitation() {
                 initial={{ opacity: 0, scaleY: 0 }}
                 animate={{ opacity: 1, scaleY: 1 }}
                 transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                className="flex items-center gap-2 h-full py-16"
+                className="flex items-center gap-1.5 lg:gap-1.5 xl:gap-2 h-full py-8 lg:py-10 xl:py-12 2xl:py-16"
               >
                 <motion.div
                   initial={{ height: 0 }}
-                  animate={{ height: "120px" }}
+                  animate={{ height: "80px" }}
                   transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent"
+                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
                 />
 
                 <motion.div
                   initial={{ height: 0 }}
-                  animate={{ height: "200px" }}
+                  animate={{ height: "140px" }}
                   transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
-                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent"
+                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent lg:h-[155px] xl:h-[170px] 2xl:h-[200px]"
                 />
 
                 <motion.div
                   initial={{ height: 0 }}
-                  animate={{ height: "120px" }}
+                  animate={{ height: "80px" }}
                   transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
-                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent"
+                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
                 />
               </motion.div>
 
@@ -225,59 +225,59 @@ export default function WeddingInvitation() {
                   delay: 1.2,
                   ease: [0.43, 0.13, 0.23, 0.96],
                 }}
-                className="w-[45%] space-y-8"
+                className="w-[45%] space-y-4 lg:space-y-5 xl:space-y-6 2xl:space-y-8"
               >
-                <div className="text-center space-y-4">
-                  <h3 className="text-gold text-3xl lg:text-4xl font-heading font-semibold tracking-widest uppercase">
+                <div className="text-center space-y-2 lg:space-y-2.5 xl:space-y-3 2xl:space-y-4">
+                  <h3 className="text-gold text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-semibold tracking-widest uppercase">
                     Wedding Ceremony
                   </h3>
-                  <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
+                  <div className="h-px w-24 lg:w-26 xl:w-28 2xl:w-32 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
                 </div>
 
-                <div className="glass-card rounded-2xl p-10 lg:p-14 space-y-8">
-                  <div className="text-center space-y-3 border-b border-gold/20 pb-6">
-                    <p className="text-gold/80 text-sm font-heading uppercase tracking-widest">
+                <div className="glass-card rounded-2xl p-6 lg:p-7 xl:p-8 2xl:p-10 space-y-5 lg:space-y-5 xl:space-y-6 2xl:space-y-8">
+                  <div className="text-center space-y-2 lg:space-y-2 xl:space-y-3 border-b border-gold/20 pb-4 lg:pb-4 xl:pb-5 2xl:pb-6">
+                    <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Date
                     </p>
-                    <p className="text-ivory text-3xl lg:text-4xl font-heading font-light">
+                    <p className="text-ivory text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-light">
                       Saturday
                     </p>
-                    <p className="text-ivory text-xl lg:text-2xl font-light tracking-wide">
+                    <p className="text-ivory text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-light tracking-wide">
                       17 January 2026
                     </p>
                   </div>
 
-                  <div className="text-center space-y-3 border-b border-gold/20 pb-6">
-                    <p className="text-gold/80 text-sm font-heading uppercase tracking-widest">
+                  <div className="text-center space-y-2 lg:space-y-2 xl:space-y-3 border-b border-gold/20 pb-4 lg:pb-4 xl:pb-5 2xl:pb-6">
+                    <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Time
                     </p>
-                    <p className="text-ivory text-4xl lg:text-5xl font-heading font-bold tracking-wider">
+                    <p className="text-ivory text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold tracking-wider">
                       08:30 PM
                     </p>
                   </div>
 
-                  <div className="text-center space-y-4">
-                    <p className="text-gold/80 text-sm font-heading uppercase tracking-widest">
+                  <div className="text-center space-y-3 lg:space-y-3 xl:space-y-4">
+                    <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Venue
                     </p>
-                    <div className="space-y-2">
-                      <p className="text-ivory text-2xl lg:text-3xl font-heading font-light">
+                    <div className="space-y-1.5 lg:space-y-1.5 xl:space-y-2">
+                      <p className="text-ivory text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-heading font-light">
                         Shoronika Community Center
                       </p>
-                      <p className="text-ivory/70 text-lg lg:text-xl font-light">
+                      <p className="text-ivory/70 text-base lg:text-base xl:text-lg 2xl:text-xl font-light">
                         Lovelane, Chattogram
                       </p>
                     </div>
-                    <div className="pt-4">
+                    <div className="pt-3 lg:pt-3 xl:pt-4">
                       <a
                         href="https://maps.google.com/?q=Shoronika+Community+Center+Lovelane+Chattogram"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 border border-gold/40 rounded-full text-gold hover:bg-gold/10 hover:border-gold transition-all duration-300 text-sm font-heading uppercase tracking-widest"
+                        className="inline-flex items-center gap-2 px-5 lg:px-5 xl:px-6 py-2.5 lg:py-2.5 xl:py-3 border border-gold/40 rounded-full text-gold hover:bg-gold/10 hover:border-gold transition-all duration-300 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5"
+                          className="h-4 w-4 lg:h-4 lg:w-4 xl:h-5 xl:w-5"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -307,7 +307,7 @@ export default function WeddingInvitation() {
               key="initial-centered"
               className="w-full max-w-7xl flex items-center justify-center"
             >
-              <div className="w-[45%] space-y-8">
+              <div className="w-[45%] space-y-4 lg:space-y-5 xl:space-y-6 2xl:space-y-8">
                 <IntroContent isInitial={true} />
               </div>
             </motion.div>

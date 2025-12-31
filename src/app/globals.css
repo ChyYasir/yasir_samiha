@@ -153,6 +153,25 @@
   .letter-spacing-widest {
     letter-spacing: 0.15em;
   }
+
+  /* Height-based responsive utilities for smaller laptops */
+  @media (max-height: 768px) and (min-width: 1024px) {
+    .compact-vertical {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .compact-spacing > * + * {
+      margin-top: 1rem !important;
+    }
+  }
+
+  @media (max-height: 900px) and (min-width: 1024px) {
+    .moderate-vertical {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
 }
 
 /* Islamic Geometric Pattern Background */
