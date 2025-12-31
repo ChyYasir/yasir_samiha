@@ -25,21 +25,64 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  title: "Yasir & Ishraq - Wedding Invitation",
+  title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
   description:
-    "You are cordially invited to the wedding ceremony of Yasir Rahman and Ishraq Samiha",
+    "You are cordially invited to the wedding ceremony of Yasir Rahman and Ishraq Samiha on Saturday, 17 January 2026 at 8:30 PM, Shoronika Community Center, Lovelane, Chattogram",
   keywords: [
     "wedding",
     "invitation",
     "ceremony",
-    "Ishraq",
-    "Yasir",
+    "Yasir Rahman",
+    "Ishraq Samiha",
     "Chattogram",
+    "Bangladesh",
+    "wedding invitation",
+    "Shoronika Community Center",
   ],
+  authors: [{ name: "Yasir Rahman & Ishraq Samiha" }],
+  creator: "Yasir Rahman & Ishraq Samiha",
+  publisher: "Yasir Rahman & Ishraq Samiha",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "Yasir & Ishraq - Wedding Invitation",
-    description: "You are cordially invited to our wedding ceremony",
+    title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
+    description:
+      "We cordially invite you to celebrate our wedding ceremony on Saturday, 17 January 2026 at 8:30 PM at Shoronika Community Center, Lovelane, Chattogram.",
     type: "website",
+    locale: "en_US",
+    siteName: "Yasir & Ishraq Wedding",
+    images: [
+      {
+        url: "/og-image.jpg", // You'll need to add this image to public folder
+        width: 1200,
+        height: 630,
+        alt: "Yasir Rahman & Ishraq Samiha Wedding Invitation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
+    description:
+      "Join us in celebrating our wedding on 17 January 2026 at Shoronika Community Center, Chattogram.",
+    images: ["/og-image.jpg"], // Same image for consistency
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -53,6 +96,14 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${cormorant.variable} ${amiri.variable}`}
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
