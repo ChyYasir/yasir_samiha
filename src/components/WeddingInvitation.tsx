@@ -268,6 +268,36 @@ export default function WeddingInvitation() {
                         Lovelane, Chattogram
                       </p>
                     </div>
+                    <div className="pt-4">
+                      <a
+                        href="https://maps.google.com/?q=Shoronika+Community+Center+Lovelane+Chattogram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 border border-gold/40 rounded-full text-gold hover:bg-gold/10 hover:border-gold transition-all duration-300 text-sm font-heading uppercase tracking-widest"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
+                        View on Map
+                      </a>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -459,6 +489,36 @@ export default function WeddingInvitation() {
                       <p className="text-ivory/70 text-base md:text-lg lg:text-xl font-light">
                         Lovelane, Chattogram
                       </p>
+                    </div>
+                    <div className="pt-4">
+                      <a
+                        href="https://maps.google.com/?q=Shoronika+Community+Center+Lovelane+Chattogram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 border border-gold/40 rounded-full text-gold hover:bg-gold/10 hover:border-gold transition-all duration-300 text-sm font-heading uppercase tracking-widest"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
+                        View on Map
+                      </a>
                     </div>
                   </div>
                 </div>

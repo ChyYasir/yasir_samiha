@@ -25,9 +25,9 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  title: "Ishraq & Yasir - Wedding Invitation",
+  title: "Yasir & Ishraq - Wedding Invitation",
   description:
-    "You are cordially invited to the wedding ceremony of Ishraq Samiha and Yasir Rahman",
+    "You are cordially invited to the wedding ceremony of Yasir Rahman and Ishraq Samiha",
   keywords: [
     "wedding",
     "invitation",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "Chattogram",
   ],
   openGraph: {
-    title: "Ishraq & Yasir - Wedding Invitation",
+    title: "Yasir & Ishraq - Wedding Invitation",
     description: "You are cordially invited to our wedding ceremony",
     type: "website",
   },
