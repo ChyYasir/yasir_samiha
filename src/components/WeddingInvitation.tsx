@@ -50,7 +50,7 @@ export default function WeddingInvitation() {
           animate={isInitial ? { opacity: 1, y: 0 } : undefined}
           transition={
             isInitial
-              ? { duration: 1.5, delay: 0.3, ease: "easeOut" }
+              ? { duration: 0.8, delay: 0.2, ease: "easeOut" }
               : undefined
           }
           className="font-arabic text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-soft-gold leading-relaxed px-4"
@@ -66,7 +66,7 @@ export default function WeddingInvitation() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
             className="text-taupe/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-normal tracking-wider italic"
             style={{ fontWeight: 500 }}
           >
@@ -92,7 +92,7 @@ export default function WeddingInvitation() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
             className="text-elegant-dark text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
             style={{
               fontWeight: 500,
@@ -113,35 +113,52 @@ export default function WeddingInvitation() {
       </section>
 
       {/* Couple Names */}
-      <section className="text-center space-y-3 lg:space-y-3.5 xl:space-y-4 2xl:space-y-6 py-2 lg:py-2.5 xl:py-3 2xl:py-4">
+      <section className="text-center space-y-3 lg:space-y-3.5 xl:space-y-4 2xl:space-y-6 py-6 lg:py-8 xl:py-10 2xl:py-12">
         {isInitial ? (
           <>
-            <motion.h2
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 4.5, ease: "easeOut" }}
-              className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
-              style={{
-                textShadow:
-                  "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
-                fontWeight: 400,
-                letterSpacing: "0.02em",
-              }}
-            >
-              Yasir Rahman
-            </motion.h2>
+            {/* Yasir Rahman - Character by Character */}
+            <div className="min-h-[4rem] lg:min-h-[4.5rem] xl:min-h-[5rem] 2xl:min-h-[6rem] flex items-center justify-center">
+              <h2
+                className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
+                style={{
+                  textShadow:
+                    "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                }}
+              >
+                {"Yasir Rahman".split("").map((char, index) => (
+                  <motion.span
+                    key={`yasir-${index}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.1,
+                      delay: 2.5 + index * 0.12,
+                    }}
+                    style={{
+                      display: "inline-block",
+                      minWidth: char === " " ? "0.3em" : "auto",
+                    }}
+                  >
+                    {char === " " ? "\u00A0" : char}
+                  </motion.span>
+                ))}
+              </h2>
+            </div>
 
+            {/* Ampersand */}
             <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ duration: 1.2, delay: 5.5, ease: "easeInOut" }}
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 4.2, ease: "easeInOut" }}
               className="relative flex items-center justify-center py-2 lg:py-2.5 xl:py-3 2xl:py-4"
             >
               <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-transparent via-gold to-transparent" />
               <motion.span
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
-                transition={{ duration: 0.8, delay: 6, ease: "easeOut" }}
+                transition={{ duration: 0.5, delay: 4.4, ease: "easeOut" }}
                 className="px-4 lg:px-4.5 xl:px-5 2xl:px-6 text-gold text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading italic"
               >
                 &
@@ -149,20 +166,36 @@ export default function WeddingInvitation() {
               <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-gold via-gold to-transparent" />
             </motion.div>
 
-            <motion.h2
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
-              className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
-              style={{
-                textShadow:
-                  "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
-                fontWeight: 400,
-                letterSpacing: "0.02em",
-              }}
-            >
-              Ishraq Samiha
-            </motion.h2>
+            {/* Ishraq Samiha - Character by Character */}
+            <div className="min-h-[4rem] lg:min-h-[4.5rem] xl:min-h-[5rem] 2xl:min-h-[6rem] flex items-center justify-center">
+              <h2
+                className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
+                style={{
+                  textShadow:
+                    "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                }}
+              >
+                {"Ishraq Samiha".split("").map((char, index) => (
+                  <motion.span
+                    key={`ishraq-${index}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.1,
+                      delay: 5.0 + index * 0.12,
+                    }}
+                    style={{
+                      display: "inline-block",
+                      minWidth: char === " " ? "0.3em" : "auto",
+                    }}
+                  >
+                    {char === " " ? "\u00A0" : char}
+                  </motion.span>
+                ))}
+              </h2>
+            </div>
           </>
         ) : (
           <>
@@ -219,8 +252,8 @@ export default function WeddingInvitation() {
             >
               {/* Left Section */}
               <motion.div
-                initial={{ x: "50%" }}
-                animate={{ x: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
                 className="w-[45%] space-y-4 lg:space-y-5 xl:space-y-6 2xl:space-y-8"
               >
@@ -357,29 +390,21 @@ export default function WeddingInvitation() {
             <motion.section
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="text-center space-y-6 pt-8"
             >
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ duration: 1.2, delay: 0.8, ease: "easeInOut" }}
+                transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
                 className="h-px w-48 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent"
               />
 
               <motion.h1
-                className="font-arabic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-ivory leading-relaxed px-4"
-                animate={{
-                  textShadow: [
-                    "0 0 20px rgba(250, 248, 243, 0.3)",
-                    "0 0 30px rgba(250, 248, 243, 0.5)",
-                    "0 0 20px rgba(250, 248, 243, 0.3)",
-                  ],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
+                className="font-arabic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-soft-gold leading-relaxed px-4"
+                style={{
+                  textShadow:
+                    "0 2px 4px rgba(0, 0, 0, 0.15), 0 0 20px rgba(166, 124, 82, 0.3)",
                 }}
               >
                 بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
@@ -388,8 +413,9 @@ export default function WeddingInvitation() {
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
-                className="text-taupe/70 text-sm md:text-base lg:text-lg font-light tracking-wider italic"
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="text-taupe/70 text-sm md:text-base lg:text-lg font-normal tracking-wider italic"
+                style={{ fontWeight: 500 }}
               >
                 In the name of Almighty Allah
               </motion.p>
@@ -397,7 +423,7 @@ export default function WeddingInvitation() {
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ duration: 1.2, delay: 1.8, ease: "easeInOut" }}
+                transition={{ duration: 0.6, delay: 1.0, ease: "easeInOut" }}
                 className="h-px w-48 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent"
               />
             </motion.section>
@@ -405,10 +431,13 @@ export default function WeddingInvitation() {
             <motion.section
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
               className="text-center px-4"
             >
-              <p className="text-charcoal text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed tracking-wide max-w-3xl mx-auto">
+              <p
+                className="text-elegant-dark text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-relaxed tracking-wide max-w-3xl mx-auto"
+                style={{ fontWeight: 500 }}
+              >
                 I cordially request the pleasure of your gracious presence and
                 blessings at our Wedding Ceremony
               </p>
@@ -418,8 +447,8 @@ export default function WeddingInvitation() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
-                duration: 1.5,
-                delay: 3.8,
+                duration: 0.8,
+                delay: 2.2,
                 ease: [0.43, 0.13, 0.23, 0.96],
               }}
               className="text-center space-y-8 relative py-8"
@@ -427,33 +456,55 @@ export default function WeddingInvitation() {
               <motion.div
                 className="absolute inset-0 flex items-center justify-center -z-10"
                 initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1.5, opacity: 0.08 }}
-                transition={{ duration: 2, delay: 4, ease: "easeOut" }}
+                animate={{ scale: 1.5, opacity: 0.05 }}
+                transition={{ duration: 1.5, delay: 2.5, ease: "easeOut" }}
               >
                 <div className="w-96 h-96 bg-gold rounded-full blur-3xl" />
               </motion.div>
 
               <div className="space-y-6">
-                <motion.h2
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: 4.5, ease: "easeOut" }}
-                  className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-ivory font-bold tracking-wide gold-glow"
-                >
-                  Yasir Rahman
-                </motion.h2>
+                {/* Yasir Rahman - Character by Character */}
+                <div className="min-h-[3rem] sm:min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
+                  <h2
+                    className="font-names text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-elegant-dark"
+                    style={{
+                      textShadow:
+                        "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                      fontWeight: 400,
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    {"Yasir Rahman".split("").map((char, index) => (
+                      <motion.span
+                        key={`mobile-yasir-${index}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                          duration: 0.1,
+                          delay: 2.5 + index * 0.12,
+                        }}
+                        style={{
+                          display: "inline-block",
+                          minWidth: char === " " ? "0.3em" : "auto",
+                        }}
+                      >
+                        {char === " " ? "\u00A0" : char}
+                      </motion.span>
+                    ))}
+                  </h2>
+                </div>
 
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
-                  transition={{ duration: 1.2, delay: 5.5, ease: "easeInOut" }}
+                  transition={{ duration: 0.6, delay: 4.2, ease: "easeInOut" }}
                   className="relative flex items-center justify-center py-6"
                 >
                   <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-transparent via-gold to-transparent" />
                   <motion.span
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
-                    transition={{ duration: 0.8, delay: 6, ease: "easeOut" }}
+                    transition={{ duration: 0.5, delay: 4.4, ease: "easeOut" }}
                     className="px-8 text-gold text-4xl md:text-5xl lg:text-6xl font-heading italic"
                   >
                     &
@@ -461,27 +512,49 @@ export default function WeddingInvitation() {
                   <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-gold via-gold to-transparent" />
                 </motion.div>
 
-                <motion.h2
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
-                  className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-ivory font-bold tracking-wide gold-glow"
-                >
-                  Ishraq Samiha
-                </motion.h2>
+                {/* Ishraq Samiha - Character by Character */}
+                <div className="min-h-[3rem] sm:min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
+                  <h2
+                    className="font-names text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-elegant-dark"
+                    style={{
+                      textShadow:
+                        "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                      fontWeight: 400,
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    {"Ishraq Samiha".split("").map((char, index) => (
+                      <motion.span
+                        key={`mobile-ishraq-${index}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                          duration: 0.1,
+                          delay: 5.0 + index * 0.12,
+                        }}
+                        style={{
+                          display: "inline-block",
+                          minWidth: char === " " ? "0.3em" : "auto",
+                        }}
+                      >
+                        {char === " " ? "\u00A0" : char}
+                      </motion.span>
+                    ))}
+                  </h2>
+                </div>
               </div>
             </motion.section>
 
             <motion.section
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 7.5, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
               className="space-y-10 py-8"
             >
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 8, ease: "easeOut" }}
+                transition={{ duration: 0.8, delay: 6.8, ease: "easeOut" }}
                 className="text-center space-y-4"
               >
                 <h3 className="text-gold text-2xl md:text-3xl lg:text-4xl font-heading font-semibold tracking-widest uppercase">
@@ -493,7 +566,7 @@ export default function WeddingInvitation() {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, delay: 8.5, ease: "easeOut" }}
+                transition={{ duration: 1, delay: 7.2, ease: "easeOut" }}
                 className="max-w-3xl mx-auto"
               >
                 <div className="glass-card rounded-2xl p-8 md:p-12 lg:p-16 space-y-10">
