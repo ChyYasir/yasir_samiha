@@ -237,11 +237,11 @@ export default function WeddingInvitation() {
   );
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <AnimatedBackground />
       <FloralBackground />
 
-      <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8 z-20">
+      <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8 z-20 overflow-x-hidden">
         {isDesktop ? (
           showSplitLayout ? (
             <motion.div
@@ -392,8 +392,8 @@ export default function WeddingInvitation() {
         ) : (
           <div className="w-full max-w-6xl space-y-12 md:space-y-16 lg:space-y-20">
             <motion.section
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="text-center space-y-6 pt-8"
             >
@@ -433,8 +433,8 @@ export default function WeddingInvitation() {
             </motion.section>
 
             <motion.section
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
               className="text-center px-4"
             >
@@ -448,14 +448,10 @@ export default function WeddingInvitation() {
             </motion.section>
 
             <motion.section
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 2.2,
-                ease: [0.43, 0.13, 0.23, 0.96],
-              }}
-              className="text-center space-y-8 relative py-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 2.2, ease: "easeOut" }}
+              className="text-center space-y-8 relative py-8 overflow-hidden"
             >
               <motion.div
                 className="absolute inset-0 flex items-center justify-center -z-10"
@@ -550,14 +546,14 @@ export default function WeddingInvitation() {
             </motion.section>
 
             <motion.section
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
               className="space-y-10 py-8"
             >
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 6.8, ease: "easeOut" }}
                 className="text-center space-y-4"
               >
@@ -568,8 +564,8 @@ export default function WeddingInvitation() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 7.2, ease: "easeOut" }}
                 className="max-w-3xl mx-auto"
               >
