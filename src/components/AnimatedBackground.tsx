@@ -10,7 +10,7 @@ export default function AnimatedBackground() {
 
   useEffect(() => {
     // Generate particles
-    const particleArray = Array.from({ length: 30 }, (_, i) => ({
+    const particleArray = Array.from({ length: 20 }, (_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
       delay: Math.random() * 15,
@@ -21,23 +21,23 @@ export default function AnimatedBackground() {
 
   return (
     <>
-      {/* Base Gradient Background */}
+      {/* Base Ivory Background */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="fixed inset-0 bg-gradient-to-br from-emerald-dark via-emerald to-emerald-dark -z-50"
+        className="fixed inset-0 bg-ivory -z-50"
       />
 
-      {/* Animated Gradient Overlay */}
+      {/* Subtle Linen Gradient Overlay */}
       <motion.div
         className="fixed inset-0 -z-40"
         animate={{
           background: [
-            "radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.15) 0%, transparent 50%)",
-            "radial-gradient(circle at 80% 50%, rgba(201, 169, 97, 0.15) 0%, transparent 50%)",
-            "radial-gradient(circle at 50% 80%, rgba(201, 169, 97, 0.15) 0%, transparent 50%)",
-            "radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.15) 0%, transparent 50%)",
+            "radial-gradient(circle at 20% 50%, rgba(243, 239, 231, 0.4) 0%, transparent 50%)",
+            "radial-gradient(circle at 80% 50%, rgba(243, 239, 231, 0.4) 0%, transparent 50%)",
+            "radial-gradient(circle at 50% 80%, rgba(243, 239, 231, 0.4) 0%, transparent 50%)",
+            "radial-gradient(circle at 20% 50%, rgba(243, 239, 231, 0.4) 0%, transparent 50%)",
           ],
         }}
         transition={{
@@ -47,10 +47,24 @@ export default function AnimatedBackground() {
         }}
       />
 
-      {/* Islamic Pattern Overlay */}
-      <div className="fixed inset-0 islamic-pattern opacity-30 -z-30" />
+      {/* Champagne Accent Overlay */}
+      <motion.div
+        className="fixed inset-0 -z-35"
+        animate={{
+          background: [
+            "radial-gradient(circle at 30% 30%, rgba(212, 199, 180, 0.08) 0%, transparent 40%)",
+            "radial-gradient(circle at 70% 70%, rgba(212, 199, 180, 0.08) 0%, transparent 40%)",
+            "radial-gradient(circle at 30% 30%, rgba(212, 199, 180, 0.08) 0%, transparent 40%)",
+          ],
+        }}
+        transition={{
+          duration: 25,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
 
-      {/* Floating Particles */}
+      {/* Floating Particles (Gold) */}
       <div className="fixed inset-0 -z-20 overflow-hidden pointer-events-none">
         {particles.map((particle) => (
           <motion.div
@@ -61,8 +75,8 @@ export default function AnimatedBackground() {
             }}
             animate={{
               y: [1000, -1000],
-              x: [0, Math.sin(particle.id) * 50],
-              opacity: [0, 1, 1, 0],
+              x: [0, Math.sin(particle.id) * 30],
+              opacity: [0, 0.3, 0.3, 0],
             }}
             transition={{
               duration: particle.duration,
@@ -74,9 +88,9 @@ export default function AnimatedBackground() {
         ))}
       </div>
 
-      {/* Vignette Effect */}
+      {/* Soft Vignette Effect */}
       <div className="fixed inset-0 pointer-events-none -z-10">
-        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-emerald-dark/50" />
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-linen/30" />
       </div>
     </>
   );

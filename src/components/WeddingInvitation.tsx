@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import AnimatedBackground from "./AnimatedBackground";
+import FloralBackground from "./FloralBackground";
 
 export default function WeddingInvitation() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -52,10 +53,10 @@ export default function WeddingInvitation() {
               ? { duration: 1.5, delay: 0.3, ease: "easeOut" }
               : undefined
           }
-          className="font-arabic text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-ivory leading-relaxed px-4"
+          className="font-arabic text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-soft-gold leading-relaxed px-4"
           style={{
             textShadow:
-              "0 0 20px rgba(250, 248, 243, 0.3), 0 0 30px rgba(250, 248, 243, 0.5)",
+              "0 2px 4px rgba(0, 0, 0, 0.15), 0 0 20px rgba(166, 124, 82, 0.3)",
           }}
         >
           بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
@@ -66,12 +67,16 @@ export default function WeddingInvitation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="text-ivory/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-light tracking-wider italic"
+            className="text-taupe/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-normal tracking-wider italic"
+            style={{ fontWeight: 500 }}
           >
             In the name of Almighty Allah
           </motion.p>
         ) : (
-          <p className="text-ivory/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-light tracking-wider italic">
+          <p
+            className="text-taupe/70 text-xs lg:text-xs xl:text-sm 2xl:text-base font-normal tracking-wider italic"
+            style={{ fontWeight: 500 }}
+          >
             In the name of Almighty Allah
           </p>
         )}
@@ -88,13 +93,19 @@ export default function WeddingInvitation() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
-            className="text-ivory text-base lg:text-base xl:text-lg 2xl:text-xl font-light leading-relaxed tracking-wide"
+            className="text-charcoal text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
+            style={{
+              fontWeight: 500,
+            }}
           >
             I cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </motion.p>
         ) : (
-          <p className="text-ivory text-base lg:text-base xl:text-lg 2xl:text-xl font-light leading-relaxed tracking-wide">
+          <p
+            className="text-charcoal text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
+            style={{ fontWeight: 500 }}
+          >
             I cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </p>
@@ -109,7 +120,12 @@ export default function WeddingInvitation() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 4.5, ease: "easeOut" }}
-              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow"
+              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              style={{
+                textShadow:
+                  "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                fontWeight: 800,
+              }}
             >
               Yasir Rahman
             </motion.h2>
@@ -136,14 +152,26 @@ export default function WeddingInvitation() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
-              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow"
+              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              style={{
+                textShadow:
+                  "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                fontWeight: 800,
+              }}
             >
               Ishraq Samiha
             </motion.h2>
           </>
         ) : (
           <>
-            <h2 className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow">
+            <h2
+              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              style={{
+                textShadow:
+                  "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                fontWeight: 800,
+              }}
+            >
               Yasir Rahman
             </h2>
 
@@ -155,7 +183,14 @@ export default function WeddingInvitation() {
               <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-gold via-gold to-transparent" />
             </div>
 
-            <h2 className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-ivory font-bold tracking-wide gold-glow">
+            <h2
+              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              style={{
+                textShadow:
+                  "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
+                fontWeight: 800,
+              }}
+            >
               Ishraq Samiha
             </h2>
           </>
@@ -167,8 +202,9 @@ export default function WeddingInvitation() {
   return (
     <div className="relative min-h-screen">
       <AnimatedBackground />
+      <FloralBackground />
 
-      <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
+      <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8 z-20">
         {isDesktop ? (
           showSplitLayout ? (
             <motion.div
@@ -198,7 +234,7 @@ export default function WeddingInvitation() {
                   initial={{ height: 0 }}
                   animate={{ height: "80px" }}
                   transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
+                  className="w-px bg-gradient-to-b from-transparent via-taupe-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
                 />
 
                 <motion.div
@@ -212,7 +248,7 @@ export default function WeddingInvitation() {
                   initial={{ height: 0 }}
                   animate={{ height: "80px" }}
                   transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
-                  className="w-px bg-gradient-to-b from-transparent via-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
+                  className="w-px bg-gradient-to-b from-transparent via-taupe-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
                 />
               </motion.div>
 
@@ -239,10 +275,10 @@ export default function WeddingInvitation() {
                     <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Date
                     </p>
-                    <p className="text-ivory text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-light">
+                    <p className="text-charcoal text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-light">
                       Saturday
                     </p>
-                    <p className="text-ivory text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-light tracking-wide">
+                    <p className="text-charcoal text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-light tracking-wide">
                       17 January 2026
                     </p>
                   </div>
@@ -251,7 +287,7 @@ export default function WeddingInvitation() {
                     <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Time
                     </p>
-                    <p className="text-ivory text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold tracking-wider">
+                    <p className="text-charcoal text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold tracking-wider">
                       08:30 PM
                     </p>
                   </div>
@@ -261,10 +297,10 @@ export default function WeddingInvitation() {
                       Venue
                     </p>
                     <div className="space-y-1.5 lg:space-y-1.5 xl:space-y-2">
-                      <p className="text-ivory text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-heading font-light">
+                      <p className="text-charcoal text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-heading font-light">
                         Shoronika Community Center
                       </p>
-                      <p className="text-ivory/70 text-base lg:text-base xl:text-lg 2xl:text-xl font-light">
+                      <p className="text-taupe/70 text-base lg:text-base xl:text-lg 2xl:text-xl font-light">
                         Lovelane, Chattogram
                       </p>
                     </div>
@@ -349,7 +385,7 @@ export default function WeddingInvitation() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.5 }}
-                className="text-ivory/70 text-sm md:text-base lg:text-lg font-light tracking-wider italic"
+                className="text-taupe/70 text-sm md:text-base lg:text-lg font-light tracking-wider italic"
               >
                 In the name of Almighty Allah
               </motion.p>
@@ -368,7 +404,7 @@ export default function WeddingInvitation() {
               transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
               className="text-center px-4"
             >
-              <p className="text-ivory text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed tracking-wide max-w-3xl mx-auto">
+              <p className="text-charcoal text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed tracking-wide max-w-3xl mx-auto">
                 I cordially request the pleasure of your gracious presence and
                 blessings at our Wedding Ceremony
               </p>
@@ -461,10 +497,10 @@ export default function WeddingInvitation() {
                     <p className="text-gold/80 text-sm md:text-base font-heading uppercase tracking-widest">
                       Date
                     </p>
-                    <p className="text-ivory text-2xl md:text-3xl lg:text-4xl font-heading font-light">
+                    <p className="text-charcoal text-2xl md:text-3xl lg:text-4xl font-heading font-light">
                       Saturday
                     </p>
-                    <p className="text-ivory text-xl md:text-2xl lg:text-3xl font-light tracking-wide">
+                    <p className="text-charcoal text-xl md:text-2xl lg:text-3xl font-light tracking-wide">
                       17 January 2026
                     </p>
                   </div>
@@ -473,7 +509,7 @@ export default function WeddingInvitation() {
                     <p className="text-gold/80 text-sm md:text-base font-heading uppercase tracking-widest">
                       Time
                     </p>
-                    <p className="text-ivory text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-wider">
+                    <p className="text-charcoal text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-wider">
                       08:30 PM
                     </p>
                   </div>
@@ -483,10 +519,10 @@ export default function WeddingInvitation() {
                       Venue
                     </p>
                     <div className="space-y-2">
-                      <p className="text-ivory text-xl md:text-2xl lg:text-3xl font-heading font-light">
+                      <p className="text-charcoal text-xl md:text-2xl lg:text-3xl font-heading font-light">
                         Shoronika Community Center
                       </p>
-                      <p className="text-ivory/70 text-base md:text-lg lg:text-xl font-light">
+                      <p className="text-taupe/70 text-base md:text-lg lg:text-xl font-light">
                         Lovelane, Chattogram
                       </p>
                     </div>

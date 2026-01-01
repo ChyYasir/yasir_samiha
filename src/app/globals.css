@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
-  --color-ivory: #faf8f3;
-  --color-ivory-light: #fffef9;
-  --color-ivory-dark: #f0ede5;
+  /* Off-White Background Family */
+  --color-ivory: #faf8f3; /* Primary background */
+  --color-linen: #f3efe7; /* Secondary background for depth */
 
-  --color-gold: #c9a961;
-  --color-gold-light: #e5d4a6;
-  --color-gold-dark: #a68b4a;
-  --color-gold-accent: #d4af37;
+  /* Floral Pattern */
+  --color-champagne: #d4c7b4; /* Floral pattern at 6-12% opacity */
 
-  --color-emerald: #1a5943;
-  --color-emerald-light: #2d7a5f;
+  /* Text Colors - DARKER for better contrast */
+  --color-charcoal: #1a1816; /* Main headings & names - MUCH DARKER */
+  --color-taupe: #3d3935; /* Body & supporting text - DARKER */
+  --color-elegant-dark: #2b1810; /* Rich dark brown for premium names */
+
+  /* Accent Colors */
+  --color-gold: #b8935a; /* Gold accent - DARKER for visibility */
+  --color-soft-gold: #a67c52; /* Soft metallic gold - DARKER */
+  --color-emerald: #1f4d3a; /* Deep green - buttons, emphasis */
+  --color-taupe-gold: #9b8a7a; /* Secondary divider lines - DARKER */
+
+  /* Legacy emerald shades for background gradients */
   --color-emerald-dark: #0f3d2c;
-  --color-emerald-muted: #3a6b5a;
+  --color-emerald-base: #1a5943;
 
   /* Fonts */
   --font-arabic: "Amiri", serif;
@@ -86,13 +93,13 @@
   @keyframes glowPulse {
     0%,
     100% {
-      text-shadow: 0 0 20px rgba(201, 169, 97, 0.4),
-        0 0 40px rgba(201, 169, 97, 0.2);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(184, 147, 90, 0.4), 0 0 40px rgba(184, 147, 90, 0.2);
       filter: brightness(1);
     }
     50% {
-      text-shadow: 0 0 30px rgba(201, 169, 97, 0.6),
-        0 0 60px rgba(201, 169, 97, 0.3);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(184, 147, 90, 0.6), 0 0 60px rgba(184, 147, 90, 0.3);
       filter: brightness(1.1);
     }
   }
@@ -121,7 +128,7 @@
   }
 
   body {
-    @apply bg-emerald-dark text-ivory font-body antialiased;
+    @apply bg-ivory text-charcoal font-body antialiased;
     min-height: 100vh;
   }
 }
@@ -132,16 +139,16 @@
   }
 
   .gold-glow {
-    text-shadow: 0 0 20px rgba(201, 169, 97, 0.4),
-      0 0 40px rgba(201, 169, 97, 0.2), 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(184, 147, 90, 0.4),
+      0 0 40px rgba(184, 147, 90, 0.2);
   }
 
   .glass-card {
     backdrop-filter: blur(12px);
-    background: rgba(240, 237, 229, 0.08);
-    border: 1px solid rgba(201, 169, 97, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background: rgba(243, 239, 231, 0.65);
+    border: 1px solid rgba(201, 169, 97, 0.25);
+    box-shadow: 0 8px 32px rgba(44, 42, 38, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 }
 
