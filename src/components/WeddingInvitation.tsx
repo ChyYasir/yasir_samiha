@@ -245,58 +245,62 @@ export default function WeddingInvitation() {
         {isDesktop ? (
           showSplitLayout ? (
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               className="w-full max-w-7xl flex items-center gap-6 lg:gap-7 xl:gap-8 2xl:gap-12"
             >
-              {/* Left Section */}
+              {/* Left Section - Slides from exact center to left */}
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
+                initial={{ x: "61%", opacity: 1 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  duration: 1.5,
+                  delay: 0.2,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
                 className="w-[45%] space-y-4 lg:space-y-5 xl:space-y-6 2xl:space-y-8"
               >
                 <IntroContent />
               </motion.div>
 
-              {/* Vertical Divider */}
+              {/* Vertical Divider - Grows after content settles */}
               <motion.div
                 initial={{ opacity: 0, scaleY: 0 }}
                 animate={{ opacity: 1, scaleY: 1 }}
-                transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                transition={{ duration: 0.8, delay: 1.8, ease: "easeOut" }}
                 className="flex items-center gap-1.5 lg:gap-1.5 xl:gap-2 h-full py-8 lg:py-10 xl:py-12 2xl:py-16"
               >
                 <motion.div
                   initial={{ height: 0 }}
                   animate={{ height: "80px" }}
-                  transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+                  transition={{ duration: 0.6, delay: 2.0, ease: "easeOut" }}
                   className="w-px bg-gradient-to-b from-transparent via-taupe-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
                 />
 
                 <motion.div
                   initial={{ height: 0 }}
                   animate={{ height: "140px" }}
-                  transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
+                  transition={{ duration: 0.8, delay: 1.9, ease: "easeOut" }}
                   className="w-px bg-gradient-to-b from-transparent via-gold to-transparent lg:h-[155px] xl:h-[170px] 2xl:h-[200px]"
                 />
 
                 <motion.div
                   initial={{ height: 0 }}
                   animate={{ height: "80px" }}
-                  transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
+                  transition={{ duration: 0.6, delay: 2.1, ease: "easeOut" }}
                   className="w-px bg-gradient-to-b from-transparent via-taupe-gold to-transparent lg:h-[90px] xl:h-[100px] 2xl:h-[120px]"
                 />
               </motion.div>
 
-              {/* Right Section */}
+              {/* Right Section - Slides in from right */}
               <motion.div
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{
-                  duration: 1.2,
-                  delay: 1.2,
-                  ease: [0.43, 0.13, 0.23, 0.96],
+                  duration: 1.5,
+                  delay: 1.8,
+                  ease: [0.25, 0.46, 0.45, 0.94],
                 }}
                 className="w-[45%] space-y-4 lg:space-y-5 xl:space-y-6 2xl:space-y-8"
               >
