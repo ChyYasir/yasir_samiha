@@ -120,11 +120,12 @@ export default function WeddingInvitation() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 4.5, ease: "easeOut" }}
-              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
               style={{
                 textShadow:
                   "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
-                fontWeight: 800,
+                fontWeight: 400,
+                letterSpacing: "0.02em",
               }}
             >
               Yasir Rahman
@@ -152,11 +153,12 @@ export default function WeddingInvitation() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 6.5, ease: "easeOut" }}
-              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
               style={{
                 textShadow:
                   "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
-                fontWeight: 800,
+                fontWeight: 400,
+                letterSpacing: "0.02em",
               }}
             >
               Ishraq Samiha
@@ -165,11 +167,12 @@ export default function WeddingInvitation() {
         ) : (
           <>
             <h2
-              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
               style={{
                 textShadow:
                   "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
-                fontWeight: 800,
+                fontWeight: 400,
+                letterSpacing: "0.02em",
               }}
             >
               Yasir Rahman
@@ -184,11 +187,12 @@ export default function WeddingInvitation() {
             </div>
 
             <h2
-              className="font-heading text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-elegant-dark font-bold tracking-wide"
+              className="font-names text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-elegant-dark"
               style={{
                 textShadow:
                   "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
-                fontWeight: 800,
+                fontWeight: 400,
+                letterSpacing: "0.02em",
               }}
             >
               Ishraq Samiha

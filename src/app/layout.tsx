@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Cormorant_Garamond, Amiri } from "next/font/google";
+import {
+  Playfair_Display,
+  Cormorant_Garamond,
+  Amiri,
+  Great_Vibes,
+} from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -22,6 +27,13 @@ const amiri = Amiri({
   variable: "--font-arabic",
   display: "swap",
   weight: ["400", "700"],
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  variable: "--font-names",
+  display: "swap",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -94,7 +106,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${cormorant.variable} ${amiri.variable}`}
+      className={`${playfair.variable} ${cormorant.variable} ${amiri.variable} ${greatVibes.variable}`}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
