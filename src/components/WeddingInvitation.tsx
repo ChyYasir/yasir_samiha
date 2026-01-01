@@ -93,7 +93,7 @@ export default function WeddingInvitation() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
-            className="text-charcoal text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
+            className="text-elegant-dark text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
             style={{
               fontWeight: 500,
             }}
@@ -103,7 +103,7 @@ export default function WeddingInvitation() {
           </motion.p>
         ) : (
           <p
-            className="text-charcoal text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
+            className="text-elegant-dark text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
             style={{ fontWeight: 500 }}
           >
             I cordially request the pleasure of your gracious presence and
@@ -279,10 +279,10 @@ export default function WeddingInvitation() {
                     <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Date
                     </p>
-                    <p className="text-charcoal text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-light">
+                    <p className="text-elegant-dark text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-heading font-light">
                       Saturday
                     </p>
-                    <p className="text-charcoal text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-light tracking-wide">
+                    <p className="text-elegant-dark text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-light tracking-wide">
                       17 January 2026
                     </p>
                   </div>
@@ -291,7 +291,7 @@ export default function WeddingInvitation() {
                     <p className="text-gold/80 text-xs lg:text-xs xl:text-sm font-heading uppercase tracking-widest">
                       Time
                     </p>
-                    <p className="text-charcoal text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold tracking-wider">
+                    <p className="text-elegant-dark text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold tracking-wider">
                       08:30 PM
                     </p>
                   </div>
@@ -301,7 +301,7 @@ export default function WeddingInvitation() {
                       Venue
                     </p>
                     <div className="space-y-1.5 lg:space-y-1.5 xl:space-y-2">
-                      <p className="text-charcoal text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-heading font-light">
+                      <p className="text-elegant-dark text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-heading font-light">
                         Shoronika Community Center
                       </p>
                       <p className="text-taupe/70 text-base lg:text-base xl:text-lg 2xl:text-xl font-light">
