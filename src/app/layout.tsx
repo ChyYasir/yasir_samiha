@@ -5,7 +5,7 @@ import {
   Amiri,
   Great_Vibes,
 } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -37,6 +37,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yasir-weds-samiha.vercel.app"),
   title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
   description:
     "You are cordially invited to the wedding ceremony of Yasir Rahman and Ishraq Samiha on Saturday, 17 January 2026 at 8:30 PM, Shoronika Community Center, Lovelane, Chattogram",
@@ -96,6 +97,14 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#FAF8F3",
 };
 
 export default function RootLayout({
