@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function FloralBackground() {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-10">
-      {/* Layer 1: Main Pattern - Slow Drift Right */}
+      {/* Layer 1: Main Pattern - Slow Drift Right - ALWAYS VISIBLE */}
       <motion.div
         initial={{ opacity: 0, x: 0, y: 0 }}
         animate={{
@@ -29,7 +29,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 2: Pattern Overlay - Slow Drift Left */}
+      {/* Layer 2: Pattern Overlay - Slow Drift Left - ALWAYS VISIBLE */}
       <motion.div
         initial={{ opacity: 0, x: 0, y: 0 }}
         animate={{
@@ -54,7 +54,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 3: Pattern Overlay - Vertical Drift */}
+      {/* Layer 3: Pattern Overlay - Vertical Drift - ALWAYS VISIBLE */}
       <motion.div
         initial={{ opacity: 0, x: 0, y: 0 }}
         animate={{
@@ -80,7 +80,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 4: Large Pattern - Slow Rotation */}
+      {/* Layer 4: Large Pattern - Slow Rotation - DESKTOP ONLY */}
       <motion.div
         initial={{ opacity: 0, scale: 1, rotate: 0 }}
         animate={{
@@ -94,7 +94,7 @@ export default function FloralBackground() {
           ease: "easeInOut",
           delay: 15,
         }}
-        className="absolute inset-0"
+        className="absolute inset-0 hidden lg:block"
         style={{
           backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "1000px 1000px",
@@ -106,7 +106,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 5: Focused Corner Accent - Top Right */}
+      {/* Layer 5: Focused Corner Accent - Top Right - DESKTOP ONLY */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{
@@ -122,7 +122,7 @@ export default function FloralBackground() {
           ease: "easeInOut",
           delay: 3,
         }}
-        className="absolute -top-20 -right-20 w-[600px] h-[600px]"
+        className="absolute -top-20 -right-20 w-[600px] h-[600px] hidden lg:block"
         style={{
           backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "600px 600px",
@@ -133,7 +133,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 6: Focused Corner Accent - Bottom Left */}
+      {/* Layer 6: Focused Corner Accent - Bottom Left - DESKTOP ONLY */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{
@@ -149,7 +149,7 @@ export default function FloralBackground() {
           ease: "easeInOut",
           delay: 7,
         }}
-        className="absolute -bottom-20 -left-20 w-[650px] h-[650px]"
+        className="absolute -bottom-20 -left-20 w-[650px] h-[650px] hidden lg:block"
         style={{
           backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "650px 650px",
@@ -160,7 +160,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 7: Accent - Center Right */}
+      {/* Layer 7: Accent - Center Right - DESKTOP ONLY */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -175,7 +175,7 @@ export default function FloralBackground() {
           ease: "easeInOut",
           delay: 12,
         }}
-        className="absolute top-1/3 -right-10 w-[500px] h-[500px]"
+        className="absolute top-1/3 -right-10 w-[500px] h-[500px] hidden lg:block"
         style={{
           backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "500px 500px",
@@ -186,7 +186,7 @@ export default function FloralBackground() {
         }}
       />
 
-      {/* Layer 8: Accent - Center Left */}
+      {/* Layer 8: Accent - Center Left - DESKTOP ONLY */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -201,7 +201,7 @@ export default function FloralBackground() {
           ease: "easeInOut",
           delay: 18,
         }}
-        className="absolute top-1/2 -left-10 w-[550px] h-[550px]"
+        className="absolute top-1/2 -left-10 w-[550px] h-[550px] hidden lg:block"
         style={{
           backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "550px 550px",
