@@ -98,7 +98,7 @@ export default function WeddingInvitation() {
               fontWeight: 500,
             }}
           >
-            I cordially request the pleasure of your gracious presence and
+            We cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </motion.p>
         ) : (
@@ -106,7 +106,7 @@ export default function WeddingInvitation() {
             className="text-elegant-dark text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
             style={{ fontWeight: 500 }}
           >
-            I cordially request the pleasure of your gracious presence and
+            We cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </p>
         )}
@@ -237,11 +237,17 @@ export default function WeddingInvitation() {
   );
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden">
-      {/* <AnimatedBackground /> */}
+    <div
+      className="relative min-h-screen overflow-x-hidden"
+      style={{ WebkitOverflowScrolling: "touch" }}
+    >
+      <AnimatedBackground />
       <FloralBackground />
 
-      <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8 z-20 overflow-x-hidden">
+      <div
+        className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8 z-20 overflow-x-hidden"
+        style={{ WebkitOverflowScrolling: "touch", transform: "translateZ(0)" }}
+      >
         {isDesktop ? (
           showSplitLayout ? (
             <motion.div
@@ -442,7 +448,7 @@ export default function WeddingInvitation() {
                 className="text-elegant-dark text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-relaxed tracking-wide max-w-3xl mx-auto"
                 style={{ fontWeight: 500 }}
               >
-                I cordially request the pleasure of your gracious presence and
+                We cordially request the pleasure of your gracious presence and
                 blessings at our Wedding Ceremony
               </p>
             </motion.section>
@@ -453,18 +459,12 @@ export default function WeddingInvitation() {
               transition={{ duration: 0.8, delay: 2.2, ease: "easeOut" }}
               className="text-center space-y-8 relative py-8 overflow-hidden"
             >
-              <motion.div
-                className="absolute inset-0 flex items-center justify-center -z-10"
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1.5, opacity: 0.05 }}
-                transition={{ duration: 1.5, delay: 2.5, ease: "easeOut" }}
-              >
-                <div className="w-96 h-96 bg-gold rounded-full blur-3xl" />
-              </motion.div>
-
               <div className="space-y-6">
                 {/* Yasir Rahman - Character by Character */}
-                <div className="min-h-[3rem] sm:min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
+                <div
+                  className="min-h-[3rem] sm:min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center"
+                  style={{ willChange: "opacity", transform: "translateZ(0)" }}
+                >
                   <h2
                     className="font-names text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-elegant-dark"
                     style={{
@@ -472,6 +472,7 @@ export default function WeddingInvitation() {
                         "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
                       fontWeight: 400,
                       letterSpacing: "0.02em",
+                      WebkitFontSmoothing: "antialiased",
                     }}
                   >
                     {"Yasir Rahman".split("").map((char, index) => (
@@ -480,12 +481,14 @@ export default function WeddingInvitation() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{
-                          duration: 0.1,
-                          delay: 2.5 + index * 0.12,
+                          duration: 0.05,
+                          delay: 2.5 + index * 0.1,
+                          ease: "linear",
                         }}
                         style={{
                           display: "inline-block",
                           minWidth: char === " " ? "0.3em" : "auto",
+                          willChange: "opacity",
                         }}
                       >
                         {char === " " ? "\u00A0" : char}
@@ -513,7 +516,10 @@ export default function WeddingInvitation() {
                 </motion.div>
 
                 {/* Ishraq Samiha - Character by Character */}
-                <div className="min-h-[3rem] sm:min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
+                <div
+                  className="min-h-[3rem] sm:min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center"
+                  style={{ willChange: "opacity", transform: "translateZ(0)" }}
+                >
                   <h2
                     className="font-names text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-elegant-dark"
                     style={{
@@ -521,6 +527,7 @@ export default function WeddingInvitation() {
                         "0 2px 8px rgba(43, 24, 16, 0.25), 0 4px 16px rgba(43, 24, 16, 0.15)",
                       fontWeight: 400,
                       letterSpacing: "0.02em",
+                      WebkitFontSmoothing: "antialiased",
                     }}
                   >
                     {"Ishraq Samiha".split("").map((char, index) => (
@@ -529,12 +536,14 @@ export default function WeddingInvitation() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{
-                          duration: 0.1,
-                          delay: 5.0 + index * 0.12,
+                          duration: 0.05,
+                          delay: 5.0 + index * 0.1,
+                          ease: "linear",
                         }}
                         style={{
                           display: "inline-block",
                           minWidth: char === " " ? "0.3em" : "auto",
+                          willChange: "opacity",
                         }}
                       >
                         {char === " " ? "\u00A0" : char}
