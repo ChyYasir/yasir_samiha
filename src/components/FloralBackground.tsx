@@ -20,7 +20,7 @@ export default function FloralBackground() {
         }}
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "800px 800px",
           backgroundRepeat: "repeat",
           filter:
@@ -45,7 +45,7 @@ export default function FloralBackground() {
         }}
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "700px 700px",
           backgroundRepeat: "repeat",
           filter:
@@ -71,7 +71,7 @@ export default function FloralBackground() {
         }}
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "900px 900px",
           backgroundRepeat: "repeat",
           filter:
@@ -96,7 +96,7 @@ export default function FloralBackground() {
         }}
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "1000px 1000px",
           backgroundRepeat: "repeat",
           backgroundPosition: "center",
@@ -124,7 +124,7 @@ export default function FloralBackground() {
         }}
         className="absolute -top-20 -right-20 w-[600px] h-[600px]"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "600px 600px",
           backgroundRepeat: "no-repeat",
           filter:
@@ -151,7 +151,7 @@ export default function FloralBackground() {
         }}
         className="absolute -bottom-20 -left-20 w-[650px] h-[650px]"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "650px 650px",
           backgroundRepeat: "no-repeat",
           filter:
@@ -177,7 +177,7 @@ export default function FloralBackground() {
         }}
         className="absolute top-1/3 -right-10 w-[500px] h-[500px]"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "500px 500px",
           backgroundRepeat: "no-repeat",
           filter:
@@ -203,7 +203,7 @@ export default function FloralBackground() {
         }}
         className="absolute top-1/2 -left-10 w-[550px] h-[550px]"
         style={{
-          backgroundImage: "url(/floral-pattern.png)",
+          backgroundImage: "url(/floral-pattern.jpg)",
           backgroundSize: "550px 550px",
           backgroundRepeat: "no-repeat",
           filter:
