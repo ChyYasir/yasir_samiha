@@ -238,7 +238,7 @@ export default function WeddingInvitation() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
       <FloralBackground />
 
       <div className="relative w-full min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8 z-20 overflow-x-hidden">
