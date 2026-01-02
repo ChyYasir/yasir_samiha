@@ -329,7 +329,7 @@ export default function WeddingInvitation() {
                       Time
                     </p>
                     <p className="text-elegant-dark text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-heading font-bold tracking-wider">
-                      08:30 PM
+                      08:00 PM
                     </p>
                   </div>
 
@@ -587,7 +587,7 @@ export default function WeddingInvitation() {
                       Time
                     </p>
                     <p className="text-charcoal text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-wider">
-                      08:30 PM
+                      08:00 PM
                     </p>
                   </div>
 

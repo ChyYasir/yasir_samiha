@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yasir-weds-samiha.vercel.app"),
   title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
   description:
-    "You are cordially invited to the wedding ceremony of Yasir Rahman and Ishraq Samiha on Saturday, 17 January 2026 at 8:30 PM, Shoronika Community Center, Lovelane, Chattogram",
+    "You are cordially invited to the wedding ceremony of Yasir Rahman and Ishraq Samiha on Saturday, 17 January 2026 at 8:00 PM, Shoronika Community Center, Lovelane, Chattogram",
   keywords: [
     "wedding",
     "invitation",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
     description:
-      "We cordially invite you to celebrate our wedding ceremony on Saturday, 17 January 2026 at 8:30 PM at Shoronika Community Center, Lovelane, Chattogram.",
+      "We cordially invite you to celebrate our wedding ceremony on Saturday, 17 January 2026 at 8:00 PM at Shoronika Community Center, Lovelane, Chattogram.",
     type: "website",
     locale: "en_US",
     siteName: "Yasir & Ishraq Wedding",
