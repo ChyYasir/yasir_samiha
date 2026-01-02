@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     siteName: "Yasir & Ishraq Wedding",
     images: [
       {
-        url: "https://pasteboard.co/fN0zQgXutwj2.png", // You'll need to add this image to public folder
+        url: "/og-image.png", // You'll need to add this image to public folder
         width: 1200,
         height: 630,
         alt: "Yasir Rahman & Ishraq Samiha Wedding Invitation",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: "Yasir Rahman & Ishraq Samiha - Wedding Invitation",
     description:
       "Join us in celebrating our wedding on 17 January 2026 at Shoronika Community Center, Chattogram.",
-    images: ["https://pasteboard.co/fN0zQgXutwj2.png"], // Same image for consistency
+    images: ["/og-image.png"], // Same image for consistency
   },
   robots: {
     index: true,
