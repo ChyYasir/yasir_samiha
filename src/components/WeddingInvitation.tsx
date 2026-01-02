@@ -98,7 +98,7 @@ export default function WeddingInvitation() {
               fontWeight: 500,
             }}
           >
-            I cordially request the pleasure of your gracious presence and
+            We cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </motion.p>
         ) : (
@@ -106,7 +106,7 @@ export default function WeddingInvitation() {
             className="text-elegant-dark text-base lg:text-base xl:text-lg 2xl:text-xl font-normal leading-relaxed tracking-wide"
             style={{ fontWeight: 500 }}
           >
-            I cordially request the pleasure of your gracious presence and
+            We cordially request the pleasure of your gracious presence and
             blessings at our Wedding Ceremony
           </p>
         )}
@@ -442,7 +442,7 @@ export default function WeddingInvitation() {
                 className="text-elegant-dark text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-relaxed tracking-wide max-w-3xl mx-auto"
                 style={{ fontWeight: 500 }}
               >
-                I cordially request the pleasure of your gracious presence and
+                We cordially request the pleasure of your gracious presence and
                 blessings at our Wedding Ceremony
               </p>
             </motion.section>
